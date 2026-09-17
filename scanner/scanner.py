@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module Scanner - An Toàn Bảo Mật Thông Tin (Người 2)
+"""Module Scanner
 
 Hỗ trợ:
 - Quét toàn bộ / Git Staged / Git Diff.

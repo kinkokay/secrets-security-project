@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Pre-commit hook - Module Ngăn chặn (Người 4).
-Đồng bộ hoàn toàn với Module Scanner mới của Người 2.
-"""
 
 import json
 import os
