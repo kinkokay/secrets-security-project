@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "scan_time": "2026-09-17 11:42:54",
+    "scanned_directory": ".",
+    "scan_mode": "filesystem",
+    "total_violations": 7,
+    "whitelisted_in_baseline": 0
+  },
+  "violations": [
+    {
+      "id": "577bf539b6c6",
+      "file": "secure_storage_module/insecure_demo.py",
+      "line": 2,
+      "type": "Hardcoded Password",
+      "entropy": 3.78,
+      "secret_masked": "Sup...26!",
+      "raw_secret": "SuperSecretMongo2026!",
+      "raw_snippet": "db_password = \"SuperSecretMongo2026!\""
+    },
+    {
+      "id": "334d70bd2d5c",
+      "file": "secure_storage_module/insecure_demo.py",
+      "line": 3,
+      "type": "AWS Access Key ID",
+      "entropy": 1.5,
+      "secret_masked": "***",
+      "raw_secret": "AKIA",
+      "raw_snippet": "api_key = \"AKIA1234567890ABCDEF\""
+    },
+    {
+      "id": "87e5084a714b",
+      "file": "secure_storage_module/insecure_demo.py",
+      "line": 3,
+      "type": "Generic API Key / Secret",
+      "entropy": 4.08,
+      "secret_masked": "AKI...DEF",
+      "raw_secret": "AKIA1234567890ABCDEF",
+      "raw_snippet": "api_key = \"AKIA1234567890ABCDEF\""
+    },
+    {
+      "id": "d2c2831eba77",
+      "file": "vulnerable_demo/app_service.py",
+      "line": 4,
+      "type": "AWS Access Key ID",
+      "entropy": 1.5,
+      "secret_masked": "***",
+      "raw_secret": "AKIA",
+      "raw_snippet": "AWS_ACCESS_KEY = \"AKIAIOSFODNN7EXAMPLE\""
+    },
+    {
+      "id": "1ea07e70e559",
+      "file": "vulnerable_demo/app_service.py",
+      "line": 7,
+      "type": "Hardcoded Password",
+      "entropy": 4.02,
+      "secret_masked": "Sup...6!#",
+      "raw_secret": "SuperSecretPassword2026!#",
+      "raw_snippet": "db_password = \"SuperSecretPassword2026!#\""
+    },
+    {
+      "id": "4d2676df5a1d",
+      "file": "vulnerable_demo/app_service.py",
+      "line": 10,
+      "type": "GitHub Personal Access Token",
+      "entropy": 5.17,
+      "secret_masked": "ghp...xyz",
+      "raw_secret": "ghp_1234567890abcdefghijklmnopqrstuvwxyz",
+      "raw_snippet": "GITHUB_TOKEN = \"ghp_1234567890abcdefghijklmnopqrstuvwxyz\""
+    },
+    {
+      "id": "6c0c47d939d2",
+      "file": "vulnerable_demo/app_service.py",
+      "line": 13,
+      "type": "Stripe/Payment API Key",
+      "entropy": 4.83,
+      "secret_masked": "sk_...lmn",
+      "raw_secret": "sk_live_51NzT1234567890abcdefghijklmn",
+      "raw_snippet": "STRIPE_KEY = \"sk_live_51NzT1234567890abcdefghijklmn\""
+    }
+  ]
+}
